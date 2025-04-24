@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<html lang="en">
+<head>
+      <meta charset="utf-8" />
+    <meta name="description" content="Calculation of a slope" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Shem Irekpita" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" sizes="180x190" href="./images/slope.png">
+    <title>Calculation of a slope</title>
+</head>
+<body>
+    <img src="./images/slope.png">
+      <script src="./js/script.js"></script>
+    <h1>Calculation of a slope and find the Y-int</h1>
+    <h1>m = (y2 - y1)/(x2 - x1)</h1>
+    <form action="#">
+        <p>Rise</p>
+        <label for="Y1int">Y1</label>
+        <input type="number" step="any" id="Y1int" placeholder="Y1int">
+        <label for="Y2int">Y2</label>
+        <input type="number" step="any" id="Y2int" placeholder="Y2int">
+        <p>Run</p>
+        <label for="X1int">X1</label>
+        <input type="number" step="any" id="X1int" placeholder="X1int">
+        <label for="X2int">X2</label>
+        <input type="number" step="any" id="X2int" placeholder="X2int">
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculate()">
+          Calculate
+        </button>
+      </form>
+ <div id="user-info">
+    <div id="slope"></div>
+    <div id="calculation"></div>
+    </div>
+</body>
 </html>
