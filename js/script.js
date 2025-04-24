@@ -14,6 +14,6 @@
         let slope = (Y2int - Y1int)/(X2int - X1int);
         let calculation = Y2int - (slope * X2int);
         // Display the results
-        document.getElementById("slope").innerHTML = "slope " + slope.toFixed();
-        document.getElementById("calculation").innerHTML = "Y-int " + calculation.toFixed();
+        document.getElementById("slope").innerHTML = "slope " + slope.toFixed(1);
+        document.getElementById("calculation").innerHTML = "Y-int " + calculation.toFixed(1);
 }
